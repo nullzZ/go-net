@@ -1,2 +1,1 @@
 coder可以自己实现接口
-msghandler也可以自己实现接口
