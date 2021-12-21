@@ -4,7 +4,7 @@
 @Version: 1.0
 @DEC:
 */
-package main
+package handler
 
 import (
 	"fmt"

@@ -9,6 +9,7 @@ package main
 import (
 	"fmt"
 	"go-net/net"
+	"go-net/net/example/handler"
 	"go-net/net/iface"
 )
 
@@ -18,7 +19,7 @@ func main() {
 		net.WithSessionListener(&SessionListener{}),
 		net.WithSendMsgLen(1024))
 	//路由
-	s.MsgHandlerMgr.Register(1, &TestHandler{})
+	s.MsgHandlerMgr.Register(1, &handler.TestHandler{})
 	//连接监听
 	s.Serve()
 }
